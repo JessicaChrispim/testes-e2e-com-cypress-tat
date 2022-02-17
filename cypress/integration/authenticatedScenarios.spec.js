@@ -31,7 +31,7 @@ describe('Scenarios where authentication is a pre-requirement', () => {
       expect(response.state).to.equal('Complete')
     })
   })
-  
+
   it('logs out', () => {
     cy.visit('/')
     cy.wait('@getNotes')
@@ -47,6 +47,6 @@ describe('Scenarios where authentication is a pre-requirement', () => {
 
 
 
-  /* let attachFile = false; o let significa que posso alterar o valor depois*/
-  //o attach file olha direto para a pasta fixtures, se n existir ele cria
-  //it.only indica que apenas aquele teste deve ser executado
+/* let attachFile = false; o let significa que posso alterar o valor depois*/
+//o attach file olha direto para a pasta fixtures, se n existir ele cria
+//it.only indica que apenas aquele teste deve ser executado

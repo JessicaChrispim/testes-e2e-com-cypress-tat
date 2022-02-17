@@ -26,8 +26,8 @@ Cypress.Commands.add('fillLoginFormAndSubmit', (
     login()
   }
 }) //se eu nao passar os parametros ele pega os definidos por default
-/*Perceba também que o comando de login agora é armazenado em uma variável, 
-e se o cacheSession for igual a true, utilizamos a funcionalidade cy.session, 
+/*Perceba também que o comando de login agora é armazenado em uma variável,
+e se o cacheSession for igual a true, utilizamos a funcionalidade cy.session,
 senão, somente a função de login() é chamada.*/
 
 const attachFileHandler = () => cy.get('#file').attachFile('example.json')
